@@ -1,0 +1,224 @@
+/* =================================
+   RESET
+   ================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* =================================
+   BODY
+   ================================= */
+body {
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+  background: #f4f4f5;
+  color: #18181b;
+  min-height: 100vh;
+}
+/* =================================
+   MAIN CONTENT
+   ================================= */
+.main-content {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+/* =================================
+   HERO
+   ================================= */
+.hero {
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+}
+/* Small heading */
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 15px;
+  padding: 7px 14px;
+  border-radius: 20px;
+  background: #e4e4e7;
+  color: #52525b;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+/* Main heading */
+.hero h1 {
+  margin-bottom: 20px;
+  font-size: 48px;
+  line-height: 1.1;
+}
+/* Description */
+.hero p {
+  margin-bottom: 30px;
+  color: #52525b;
+  font-size: 18px;
+  line-height: 1.7;
+}
+/* Learn more button */
+.learn-more {
+  border: none;
+  padding: 13px 24px;
+  border-radius: 8px;
+  background: #18181b;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+.learn-more:hover {
+  background: #27272a;
+  transform: translateY(-2px);
+}
+/* =================================
+   COOKIE BANNER
+   ================================= */
+.cookie-banner {
+  position: fixed;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1000;
+  background: #18181b;
+  color: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow:
+    0 15px 40px
+    rgba(0, 0, 0, 0.25);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+/* =================================
+   COOKIE CONTENT
+   ================================= */
+.cookie-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+/* =================================
+   COOKIE ICON
+   ================================= */
+.cookie-icon {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: #27272a;
+  font-size: 26px;
+}
+/* =================================
+   COOKIE TEXT
+   ================================= */
+.cookie-text {
+  flex: 1;
+}
+.cookie-text h2 {
+  margin-bottom: 6px;
+  font-size: 18px;
+}
+.cookie-text p {
+  color: #d4d4d8;
+  font-size: 14px;
+  line-height: 1.6;
+}
+/* =================================
+   ACCEPT BUTTON
+   ================================= */
+.accept-button {
+  flex-shrink: 0;
+  border: none;
+  padding: 13px 25px;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #18181b;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+.accept-button:hover {
+  background: #e4e4e7;
+  transform: translateY(-2px);
+}
+.accept-button:focus-visible {
+  outline: 3px solid #a1a1aa;
+  outline-offset: 3px;
+}
+/* =================================
+   HIDDEN COOKIE BANNER
+   ================================= */
+.cookie-banner.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  pointer-events: none;
+}
+/* =================================
+   TABLET / MOBILE
+   ================================= */
+@media (max-width: 700px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+  .hero p {
+    font-size: 16px;
+  }
+  .cookie-content {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .cookie-text {
+    min-width: 0;
+    flex: 1;
+  }
+  .accept-button {
+    width: 100%;
+  }
+}
+/* =================================
+   SMALL MOBILE
+   ================================= */
+@media (max-width: 480px) {
+  .main-content {
+    padding: 20px;
+  }
+  .hero h1 {
+    font-size: 30px;
+  }
+  .cookie-banner {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    padding: 16px;
+  }
+  .cookie-icon {
+    width: 42px;
+    height: 42px;
+    font-size: 22px;
+  }
+  .cookie-text h2 {
+    font-size: 16px;
+  }
+  .cookie-text p {
+    font-size: 13px;
+  }
+}

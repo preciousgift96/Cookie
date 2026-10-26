@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <meta
+    name="description"
+    content="A simple cookie consent banner built with HTML, CSS and JavaScript."
+  >
+  <title>Cookie Consent</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="cookie.css">
+</head>
+<body>
+  <!-- =================================
+       MAIN WEBSITE CONTENT
+       ================================= -->
+  <main class="main-content">
+    <section class="hero">
+      <span class="eyebrow">
+        Welcome
+      </span>
+      <h1>
+        Build Better Digital Experiences
+      </h1>
+      <p>
+        This is a sample webpage for the Cookie Consent
+        project. The cookie banner appears when you first
+        visit the page.
+      </p>
+      <button class="learn-more">
+        Learn More
+      </button>
+    </section>
+  </main>
+  <!-- =================================
+       COOKIE CONSENT BANNER
+       ================================= -->
+  <aside
+    class="cookie-banner"
+    id="cookie-banner"
+    aria-label="Cookie consent"
+  >
+    <div class="cookie-content">
+      <!-- Cookie Icon -->
+      <div
+        class="cookie-icon"
+        aria-hidden="true"
+      >
+        🍪
+      </div>
+      <!-- Cookie Information -->
+      <div class="cookie-text">
+        <h2>
+          We use cookies
+        </h2>
+        <p>
+          We use cookies to improve your experience,
+          understand how you use our website, and
+          provide relevant content.
+        </p>
+      </div>
+      <!-- Accept Button -->
+      <button
+        class="accept-button"
+        id="accept-cookies"
+        type="button"
+      >
+        Accept
+      </button>
+    </div>
+  </aside>
+  <!-- JavaScript -->
+  <script src="cookie.js"></script>
+</body>
+</html>
